@@ -1,0 +1,11 @@
+body{
+    background-color: #DEC0F1;
+}
+
+#Intrests{
+    background-color: #EFD9CE;
+    padding: 15px;
+    width: 75%;
+    height: 250px;
+    overflow: scroll;
+}

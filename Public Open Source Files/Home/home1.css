@@ -1,0 +1,52 @@
+body{
+    background-color: #DEC0F1;
+    color: #2E2C2F;
+}
+
+.box {
+    background-color: #B79CED;
+    border-style: dashed #957FEF;
+    border-radius: 10px;
+    font-family: Shantell Sans 
+  }
+
+#header{
+    font-family: Shantell+Sans;
+}
+  
+/*status cafe*/
+
+#statuscafe {
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  #statuscafe a {
+    color: var(--yellow);
+    text-decoration: none;
+  }
+  
+  #statuscafe-username {
+    font-size: 15px;
+    background: #957fef;
+    font-family: morningtea, var(--fonts);
+    border-bottom: 0px;
+  }
+  
+  #statuscafe-content {
+    font-size: 19px;
+    background: #EFD9CE;
+    color: #957fef;
+  }
+  
+
+  /*imood*/
+
+.imood {
+    background: white;
+    border-radius: 4px;
+  }
+
+#footer {
+  line-height: 0.7;
+}
