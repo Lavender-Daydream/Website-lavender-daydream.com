@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!-- 
+           __..--''``---....___   _..._    __
+ /// //_.-'    .-/";  `        ``<._  ``.''_ `. / // /
+///_.-' _..--.'_    \                    `( ) ) // //
+/ (_..-' // (< _     ;_..__               ; `' / ///
+ / // // //  `-._,_)' // / ``--...____..-' /// / //
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/_assets/favicon.ico" />
+    <meta name="description" content="the personal website of a cat fan" />
+    <title>emeowly</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://emeowly.gay/emeowly.xml" />
+
+    <!-- -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/freezeframe@3.0.10/build/css/freezeframe_styles.min.css" />
+    <script type="text/javascript" src="https://unpkg.com/freezeframe@3.0.10/build/js/freezeframe.pkgd.min.js"></script>
+    <!--  -->
+    <link href="/_style/style.css" rel="stylesheet" type="text/css" />
+    <script src="/_style/scripts/js.js"></script>
+    <script src="/_style/scripts/js-extra.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/_style/audioplayer.css" />
+  </head>
+  <body>
+    <div style="position: absolute; width: 100%; margin-top: -27px">
+      <marquee direction="left" scrollamount="7"><img src="/_images/site_images/nekoleft.gif" alt="neko running." /></marquee>
+    </div>
+    <div class="pagecontent" id="homepage">
+      <a href="#main" class="dmtoggle skip-to-main"><div class="cont">Skip to main content</div></a>
+      <div id="toggles">
+<div class="dmtoggle mobile_toggle">
+  <button onclick="openMenu();" class="imgtog lmbutton" tabindex="0" title="open navigation menu"><div class="mobnavtoggle" aria-label="Open menu"></div></button>
+</div>
+<div class="flexplaceholder"></div>
+
+<!-- <div class="dmtoggle">
+  <button onclick="toggleTheme();" class="imgtog lmbutton" tabindex="0" title="toggle dark mode">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" aria-label="Toggle darkmode">
+      <path fill-rule="evenodd" d="M30.000,15.000 L24.346,18.871 L25.607,25.607 L18.871,24.346 L15.000,30.000 L11.129,24.346 L4.393,25.607 L5.654,18.871 L-0.000,15.000 L5.654,11.129 L4.393,4.393 L11.129,5.654 L15.000,-0.000 L18.871,5.654 L25.607,4.393 L24.346,11.129 L30.000,15.000 ZM17.433,18.287 C14.274,18.287 11.713,15.726 11.713,12.567 C11.713,10.362 12.961,8.449 14.789,7.494 C10.741,7.607 7.494,10.923 7.494,14.998 C7.494,19.145 10.855,22.506 15.002,22.506 C19.077,22.506 22.393,19.259 22.506,15.211 C21.551,17.039 19.638,18.287 17.433,18.287 Z" />
+    </svg>
+  </button>
+</div> -->
+</div>
+<script>
+  $(".mobile_toggle").click(function () {
+    $("aside").toggleClass("not-hidden");
+  });
+</script>
+
+      <aside>
+        <div class="flexwindow" id="sidenavii">
+  <div class="dirnavis flex-itemwindow">
+    <div class="window">
+      <div class="titlebar">
+        <div class="windowtitle">links</div>
+        <div class="flexplaceholder"></div>
+        <div class="flex">
+          <div class="cb"></div>
+          <div class="cb"></div>
+          <div class="cb"></div>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="cont dir flex-item" tabindex="0" style="flex-grow: 2">
+          <div id="directorynav">
+            <div style="position: absolute; right: 18px; bottom: 10px; z-index: 1"><img src="/_images/art/pixels/eggcat.png" alt="pixel art of a sleeping white cat shaped like a fried egg with a yoke in the middle." /></div>
+
+            <a href="/index.shtml" class="homenavi dirnavi">home</a>
+            <a href="/status.shtml" class="dirnavi">status</a>
+            <a href="https://ko-fi.com/chulalusa/shop" class="dirnavi">art shop</a>
+
+            <details class="navidetails" open>
+              <summary class="fnavi dirnavi">emeowly</summary>
+              <div class="subc">
+                <a href="/about.shtml" class="dirnavi">about</a>
+                <!--<a href="/now.shtml" class="dirnavi">now</a> -->
+                <a href="/characters.shtml" class="dirnavi">characters</a>
+                <a href="/watched-list.shtml" class="dirnavi">watched list</a>
+                <a href="/visited.shtml" class="dirnavi">places visited</a>
+              </div>
+            </details>
+            <details class="navidetails" open>
+              <summary class="fnavi dirnavi">for you</summary>
+              <div class="subc">
+                <a href="/graphics.shtml" class="dirnavi">f2u graphics</a>
+                <a href="/paint.shtml" class="paintnavi dirnavi">paint</a>
+              </div>
+            </details>
+            <details class="navidetails" open>
+              <summary class="fnavi dirnavi">art</summary>
+              <div class="subc">
+                <a href="/art/beadwork.shtml" class="dirnavi">beadwork</a>
+                <a href="/art/pixel-art.shtml" class="dirnavi">pixel art</a>
+                <!-- <a href="/art/fiber-art.shtml" class="dirnavi">fiber art</a>
+                <a href="/art/old-art.shtml" class="dirnavi">old art</a> -->
+              </div>
+            </details>
+            <details class="navidetails" open>
+              <summary class="fnavi dirnavi">photos</summary>
+              <div class="subc">
+                <a href="/photos/" class="dirnavi">photo home</a>
+                <a href="/photos/la2023.shtml" class="dirnavi">la 2023</a>
+                <a href="/photos/oklahumma.shtml" class="dirnavi">oklahumma</a>
+                <a href="/photos/arthropods.shtml" class="dirnavi">arthropods</a>
+              </div>
+            </details>
+
+            <details class="navidetails" open>
+              <summary class="fnavi dirnavi">links out</summary>
+              <div class="subc">
+                <a href="https://neocities.org/site/emeowly" class="dirnavi">profile</a>
+                <a href="https://bisexualism.emeowly.gay/" class="dirnavi">bi webring</a>
+                <a href="/outlinks.shtml" class="dirnavi">outlinks</a>
+              </div>
+            </details>
+
+            <!-- <details class="navidetails">
+              <summary class="fnavi dirnavi">animals</summary>
+              <div class="subc">
+                <a href="/animals/cats.shtml" class="dirnavi">cats</a>
+                <a href="/animals/dogs.shtml" class="dirnavi">dogs</a>
+                <a href="/animals/arthropoda.shtml" class="dirnavi">arthropoda 🕸</a>
+                <a href="/animals/other.shtml" class="dirnavi">other animals</a> 
+              </div>
+            </details>-->
+
+            <!-- <details class="navidetails">
+              <summary class="fnavi dirnavi">shrines</summary>
+              <div class="subc">
+                <a href="/toontown/" class="dirnavi">toontown</a>
+                <a href="/shrines/the-cat-folder.shtml" class="dirnavi">the cat folder</a>
+                <a href="/shrines/spiders.shtml" class="dirnavi">spiders</a>
+              </div>
+            </details>-->
+
+            <!-- <details class="navidetails">
+              <summary class="fnavi dirnavi">collections</summary>
+              <div class="subc">
+                <a href="/collections/feathers.shtml" class="dirnavi">feathers</a>
+                <a href="/collections/plushies.shtml" class="dirnavi">plushies</a>
+                <a href="/collections/stickers.shtml" class="dirnavi">stickers</a>
+                <a href="/collections/my-room.shtml" class="dirnavi">my room</a>
+              </div>
+            </details>-->
+
+            <div style="height: 0; display: none"><img src="/_images/assets/pixels/h-folder.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sideinfoo flexwindow">
+    <div class="window">
+      <div class="titlebar">
+        <div class="windowtitle">buttons</div>
+        <div class="flexplaceholder"></div>
+        <div class="flex">
+          <div class="cb"></div>
+          <div class="cb"></div>
+          <div class="cb"></div>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex-item">
+          <div class="deco_l">
+            <img src="/_images/art/pixels/cloud2.gif" class="freezeframe" alt="" />
+          </div>
+          <div class="sideimage imgaccent">
+            <img src="/_images/site_images/helldivers.gif" alt="a helldivers 2 bile titan typing on a laptop." class="freezeframe" />
+          </div>
+        </div>
+        <div style="width: 96px">
+          <div class="cont lh0" style="padding: 3px; margin-bottom: 4px">
+            <img alt="pink and orange windows themed button with bouncing letters that says emeowly.gay." src="/_images/assets/emeowly.gif" style="margin-bottom: 4px" class="freezeframe" />
+            <img alt="blue and purple windows themed button with bouncing letters that says emeowly.gay." src="/_images/assets/emeowly_alt1.gif" class="freezeframe" />
+          </div>
+          <button class="start ffbutton" style="display: none">start gifs</button>
+          <button class="stop ffbutton">stop gifs</button>
+        </div>
+      </div>
+      <div class="cont">
+        <label><input type="checkbox" class="itshidden" /> arachnophobia mode</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(".stop").click(function (e) {
+    ff = new freezeframe(".freezeframe").capture().setup();
+  });
+  $(".stop").click(function (e) {
+    $(".ffbutton").toggle();
+    $(".hideanim").hide();
+    $(".staticanim").show();
+
+    e.preventDefault();
+    ff.release();
+  });
+  $(".start").click(function (e) {
+    $(".ffbutton").toggle();
+    $(".hideanim").show();
+    $(".staticanim").hide();
+    e.preventDefault();
+    ff.trigger();
+  });
+
+  $(function () {
+    // get choice from local storage
+    var status = localStorage.getItem("hidingtest");
+    if (status == "true") {
+      $(".hidethis").css("display", "none");
+      $(".itshidden").attr("checked", true);
+    } else {
+      $(".hidethis").css("display", "block");
+      $(".itshidden").attr("checked", false);
+    }
+    // hide element if checkbox is checked
+    $(".itshidden").click(function () {
+      if (this.checked) {
+        $(".hidethis").hide();
+      } else {
+        $(".hidethis").show();
+      }
+      // save choice to local storage
+      localStorage.setItem("hidingtest", this.checked);
+    });
+  });
+
+  // default hidden
+  // $(function () {
+  //   // get choice from local storage
+  //   var status = localStorage.getItem("hiddentest");
+  //   if (status == "true") {
+  //     $(".hidethis").css("display", "block");
+  //     $(".itshidden").attr("checked", false);
+  //   } else {
+  //     $(".hidethis").css("display", "none");
+  //     $(".itshidden").attr("checked", true);
+  //   }
+  //   // hide element if checkbox is checked
+  //   $(".itshidden").click(function () {
+  //     if (this.checked) {
+  //       $(".hidethis").hide();
+  //     } else {
+  //       $(".hidethis").show();
+  //     }
+  //     // save choice to local storage
+  //     localStorage.setItem("hiddentest", this.checked);
+  //   });
+  // });
+</script>
+
+
+        <img src="/_images/art/drawing/bungirl.png" alt="a drawing of an anthro lop-earred rabbit with cream colored fur and light green horns." class="mobilehide" style="margin-top: 15px" />
+      </aside>
+
+      <main style="flex-grow: 2">
+        <div class="flexwindow">
+          <div class="flex-itemwindow" style="flex-grow: 5">
+            <div class="window">
+              <header>
+                <div id="header">
+  <div class="titlebar" id="maintitle">
+    <div id="sitetitle" class="windowtitle"></div>
+    <div class="flexplaceholder"></div>
+    <div class="flex">
+      <div class="cb"></div>
+      <div class="cb"></div>
+      <div class="cb"></div>
+    </div>
+  </div>
+  <div class="browserbar flex">
+    <a class="browsernav" onclick="history.back()" title="go back">
+      <img src="/_images/assets/svg/left.svg" />
+    </a>
+    <a class="browsernav" onclick="history.forward()" title="go forward">
+      <img src="/_images/assets/svg/right.svg" />
+    </a>
+    <a class="browsernav" onClick="window.location.reload()" title="refresh">
+      <img src="/_images/assets/svg/refresh.svg" />
+    </a>
+    <a href="https://neocities.org/site/emeowly" class="browsernav" title="neocities profile">
+      <img src="/_images/assets/svg/profile.svg" />
+    </a>
+    <div class="urlbar">
+      <div class="flex">
+        <span id="siteurl">emeowly.gay</span>
+        <span class="fav" title="you cant remove this site from your favorites."><img src="/_images/assets/svg/favorite.svg" /></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="browserbar">
+    <div class="cont fv flex">
+      <a href="/index.shtml" class="navlinks">home</a>
+      <hr />
+      <a href="/about.shtml" class="navlinks">about</a>
+      <hr />
+      <a href="/status.shtml" class="navlinks">status</a>
+      <hr />
+      <a href="/guestbook.shtml" class="navlinks">guestbook</a>
+      <hr />
+      <a href="/outlinks.shtml" class="navlinks">outlinks</a>
+      <hr />
+      <a href="/site-info.shtml" class="navlinks">site info</a>
+      <hr />
+      <a href="/sitemap.shtml" class="navlinks">sitemap</a>
+    </div>
+  </div>
+  <div class="deco_r">
+    <img src="/_images/art/pixels/cloud1.gif" class="freezeframe" alt="" />
+  </div>
+</div>
+
+              </header>
+              <div class="flex-col">
+                <div class="cont mainc" id="main">
+                  <article>
+                    <section>
+                      <div class="floatl">
+                        <img src="/_images/site_images/maxwell.gif" align="left" width="200" class="freezeframe" alt="maxwell the cat gif rocking back and forth." />
+                      </div>
+
+                      <h1 class="gaycats">
+                        welcome to
+                        <span class="maskcont">
+                          <span class="clip-text hideanim"> gay cats! </span>
+                          <span class="clip-text staticanim"> gay cats! </span>
+                        </span>
+                      </h1>
+                      <hr />
+                      <p>
+                        <em class="cho" title="hello, my name is emily!">halito, sv hohchifo yvt emily!</em>
+                        welcome to my website that is the result of auDHD hyperfixation and many weed. i spent 5 months working on this site offline, its not finished and it never will be
+                      </p>
+                      <p>im an indigenous gamer, artist and hobbyist webdev and i made this little space on the internet to learn and experiment with coding and share my art and other things i like without having to deal with social media.</p>
+
+                      <p>i used to run the <a href="https://bisexualism.emeowly.gay/">bisexualism</a> webring for bi people on the small web! the webring was archived on 1/28/2026</p>
+
+                      <div class="floatr">
+                        <img src="/_images/site_images/nekoanim.gif" alt="" class="freezeframe" />
+                      </div>
+                      <p>
+                        feel free to look around and maybe leave a comment in the <a href="/guestbook.shtml">guestbook!</a> ♥ if youre lost, you can use the
+                        <a href="/sitemap.shtml">map</a>
+                        to find your way around!<br />
+                      </p>
+                      <iframe src="//incr.easrng.net/badge?key=emeowly" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
+                      <hr />
+                      <p>hover over <em class="cho" title="choctaw">chahta</em> or <em class="chr" title="cherokee">tsalagi</em> words to get a translation!</p>
+                    </section>
+                  </article>
+                </div>
+                <div class="cont lh0" id="webrings">
+                  <div id="autiring">
+                    <script type="text/javascript" src="https://ballonlea.net/autiring/onionring-variables.js" defer></script>
+                    <script type="text/javascript" src="/_webring/autistcode.js" defer></script>
+                  </div>
+                  <div id="hotline">
+                    <table style="text-align: center; margin: 0 auto; font-size: 0px">
+                      <tr>
+                        <td class="webring-prev">
+                          <a href="https://hotlinewebring.club/emeowly/previous" class="webring-prev"><img src="/_webring/hotlinel.png" class="webrings bouncel" alt="previous hotline webring member." /></a>
+                        </td>
+                        <td class="webring-info">
+                          <a href="https://hotlinewebring.club/" class="webring-info"><img src="/_webring/hotline.png" alt="hotline webring." /></a>
+                        </td>
+                        <td class="webring-next">
+                          <a href="https://hotlinewebring.club/emeowly/next" class="webring-next"><img src="/_webring/hotliner.png" class="webrings bouncer" alt="next hotline webring member." /></a>
+                        </td>
+                        <!--
+  ／l、             
+（ﾟ､ ｡ ７         
+  l  ~ヽ       
+  じしf_,)ノ
+-->
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="window">
+              <div class="titlebar">
+                <div class="flexplaceholder"></div>
+                <div class="flex">
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                </div>
+              </div>
+              <div class="cont flex" style="padding-bottom: 0">
+                <div class="flex-item">
+                  <h1>max</h1>
+                  <p>spring 2010 - feb 24 2025</p>
+                  <img src="/_images/pets/max/max29.jpg" class="imgaccent" alt="an american shorthair tabby sleeps peacefully on his side a brown couch." />
+                </div>
+                <hr />
+                <div class="flex-item">
+                  <h1>zeke</h1>
+                  <p>spring 2012 - may 12 2025</p>
+                  <img src="/_images/pets/zeke/zeke31.jpg" class="imgaccent" alt="a grey cat with white chin and chest lays in my arms looking up lovingly." />
+                </div>
+              </div>
+            </div>
+            <div class="flexwindow">
+              <div class="flex-itemwindow window">
+                <div class="titlebar">
+                  <div class="windowtitle">stamps</div>
+                  <div class="flexplaceholder"></div>
+                  <div class="flex">
+                    <div class="cb"></div>
+                    <div class="cb"></div>
+                    <div class="cb"></div>
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <div class="cont lh0" style="font-size: 0; max-height: 200px">
+                    <img src="/_images/graphics/stamps/breadcat.gif" alt="cat with a piece of bread around its head." />
+                    <img src="/_images/graphics/stamps/drpepper.gif" alt="dr pepper." />
+                    <img src="/_images/graphics/stamps/evil.png" alt="a small kitten with the word 'evil' on it." />
+                    <img src="/_images/graphics/stamps/idleturcat.png" alt="cat holding a knife with the words 'i'd let your cat stab me.'" />
+                    <img src="/_images/graphics/stamps/catrate.png" alt="an mspaint drawing of a cat that says 'this cat thinks you're 12/10.'" />
+                    <img src="/_images/graphics/stamps/oh lawd.png" alt="cat walking around a corner saying 'oh lawd he comin.'" />
+                    <img src="/_images/graphics/stamps/sadcat.gif" alt="flipping off a sad cat." />
+                  </div>
+                  <div class="cont lh0" style="font-size: 0; max-height: 200px">
+                    <img src="/_images/graphics/mybuttons/twospirit.gif" alt="waving two spirit flag." />
+                    <img src="/_images/graphics/buttons/queercodedthis.png" alt="youre telling me a queer coded this." />
+                    <img src="/_images/graphics/buttons/handcoded.gif" alt="completely hand coded." class="freezeframe" />
+                    <img src="/_images/graphics/buttons/mobilefriendly.gif" alt="mobile friendly." class="freezeframe" />
+                    <!-- <img src="/_images/graphics/buttons/leprd.png" alt="leprd" /> -->
+                    <img src="/_images/graphics/buttons/vsc.gif" alt="visual studio code." />
+                    <img src="/_images/graphics/buttons/weed.gif" alt="i love weed." class="freezeframe" />
+                    <img src="/_images/graphics/buttons/foreveronline.gif" alt="forever online." class="freezeframe" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flexwindow">
+              <div class="flex-itemwindow">
+                <div class="window">
+                  <div class="titlebar">
+                    <div class="windowtitle">latest update</div>
+                    <div class="flexplaceholder"></div>
+                    <div class="flex">
+                      <div class="cb"></div>
+                      <div class="cb"></div>
+                      <div class="cb"></div>
+                    </div>
+                  </div>
+                  <div class="cont">
+                    <div id="widgetmain" style="text-align: left; overflow-y: auto; overflow-x: hidden; width: px; background-color: transparent">
+                      <div id="rsswidget">
+                        <iframe
+                          src="https://emeowly.gay/_php/getrss.php?time=1730160386721&amp;x=https%3A%2F%2Femeowly.gay%2Femeowly.xml&amp;w=&amp;h=&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=3&amp;it=false&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=true&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12"
+                          border="0"
+                          hspace="0"
+                          vspace="0"
+                          frameborder="no"
+                          marginwidth="0"
+                          marginheight="0"
+                          style="border: 0; padding: 0; width: 100%; height: 200px; border-top: 1px solid var(--border-color); border-radius: 4px; border-bottom: 1px solid var(--border-color); margin-bottom: -4px"
+                          id="rssOutput"
+                          >Reading RSS Feed ...</iframe
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex" style="margin-top: 5px">
+                    <a href="/emeowly.xml"
+                      ><button style="margin: 0px">RSS feed<img src="/_images/assets/svg/rss.svg" align="right" style="margin-left: 5px; height: 14px" /></button
+                    ></a>
+
+                    <div class="flexplaceholder"></div>
+
+                    <a href="/changelog.shtml"><button style="margin: 0px">view updates</button></a>
+                  </div>
+                </div>
+
+                <div class="window">
+                  <div class="titlebar">
+                    <div class="flexplaceholder"></div>
+                    <div class="flex">
+                      <div class="cb"></div>
+                      <div class="cb"></div>
+                      <div class="cb"></div>
+                    </div>
+                  </div>
+                  <div class="cont">
+                    <h2>
+                      <span class="maskcont">
+                        <span class="clip-text hideanim"> ! new item ! </span>
+                        <span class="clip-text staticanim"> ! new item ! </span>
+                      </span>
+                    </h2>
+                    <hr />
+                    <p>a blahaj plush appears in front of you!</p>
+                    <p>[click him to pick him up]</p>
+                    <a href="/cookie.shtml"><img src="/_images/site_images/blahaj.gif" alt="spinning blahaj shark plush gif." class="freezeframe" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-itemwindow">
+                <div class="mobilehide window">
+                  <div class="titlebar">
+                    <div class="windowtitle">radar</div>
+                    <div class="flexplaceholder"></div>
+                    <div class="flex">
+                      <div class="cb"></div>
+                      <div class="cb"></div>
+                      <div class="cb"></div>
+                    </div>
+                  </div>
+                  <div class="cont lh0 pad0" style="image-rendering: optimizequality">
+                    <img src="https://radar.weather.gov/ridge/standard/SOUTHPLAINS_loop.gif" alt="" class="hideanim" />
+                    <img src="https://radar.weather.gov/ridge/standard/SOUTHPLAINS_0.gif" alt="" class="staticanim" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-itemwindow rightside" style="min-width: 250px">
+            <div class="window important">
+              <div class="titlebar">
+                <div class="flexplaceholder"></div>
+                <div class="flex">
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                </div>
+              </div>
+              <div class="flex-col">
+                <div class="worldbanner imgaccent" style="background-image: url(&quot;/_images/assets/svg/palestine.svg&quot;)">
+                  <div class="cont"><p>palestine</p></div>
+                </div>
+                <div class="cont">
+                  <p>
+                    <a href="https://decolonizepalestine.com/" target="_blank" rel="noopener noreferrer">decolonize palestine</a>
+                    <br />
+                    <a href="https://www.pcrf.net/" target="_blank">palestinian childrens relief fund</a>
+                    <br />
+                    <a href="https://linktr.ee/opolivebranch" target="_blank">operation olive branch</a>
+                    <br />
+                    <a href="https://gazafunds.com" target="_blank">gazafunds</a>
+                    <br />
+                    <a href="https://gazaesims.com/" target="_blank">esims for gaza</a>
+                    <br />
+                    <a href="https://chuffed.org/project/crips-for-esims-for-gaza" target="_blank">crips for esims for gaza</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="window mobilehide">
+              <div class="titlebar">
+                <div class="flexplaceholder"></div>
+                <div class="flex">
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                </div>
+              </div>
+
+              <link rel="stylesheet" href="/_style/cal/style.css" />
+              <script src="/_style/cal/script.js" async></script>
+              <div class="calendar">
+                <table id="calendar" cellspacing="2" width="100%">
+                  <thead>
+                    <tr class="calheader"></tr>
+                    <tr>
+                      <th>S</th>
+                      <th>M</th>
+                      <th>T</th>
+                      <th>W</th>
+                      <th>T</th>
+                      <th>F</th>
+                      <th>S</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <script src="/_style/scripts/holidays.js" async></script>
+                <div id="holigae"></div>
+              </div>
+              <div class="deco_r">
+                <img src="/_images/art/pixels/moon.gif" class="freezeframe" alt="" style="margin-top: -15px; right: -27px; position: relative" />
+              </div>
+            </div>
+
+            <div class="window">
+              <div class="titlebar">
+                <div class="windowtitle">info</div>
+                <div class="flexplaceholder"></div>
+                <div class="flex">
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                  <div class="cb"></div>
+                </div>
+              </div>
+              <div id="crnt" class="flex-col ms">
+                <div class="nekostat">
+                  <div class="hilight"><div class="cont">created</div></div>
+                  <div class="cont">jul/22/2022</div>
+                </div>
+                <div class="nekostat">
+                  <div class="hilight"><div class="cont">site views</div></div>
+                  <div class="cont">
+                    <script type="text/javascript" src="/_php/counter/counter.php?page=home"></script>
+                  </div>
+                </div>
+
+                <div class="cont">hosted on leprd.space • made with visual studio code</div>
+              </div>
+            </div>
+            <img src="/_images/site_images/mercys.png" alt="a drawing of winged victory mercy from overwatch holding a bisexual flag." class="mobilehide" style="margin-top: 15px" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="mpthree">
+      <div class="titlebart" id="mpbutttoon">
+        <div class="flexplaceholder"></div>
+        <div class="button_style"><img src="/_images/assets/music.gif" class="freezeframe" /></div>
+        <div class="flexplaceholder"></div>
+      </div>
+      <div class="window mphide">
+        <div class="flex">
+          <div>
+            <div class="songrecord">
+              <div class="songarts staticanim"></div>
+              <div class="songart hideanim"></div>
+            </div>
+          </div>
+          <div class="flex-item">
+            <div class="cont">
+              after temptation
+              <hr />
+              bleed out
+            </div>
+            <span class="player player-accessible">
+              <audio loop>
+                <source src="https://dropbox.com/scl/fi/ozewom4rvt5qlq9j4dtd8//Bleed-Out-13_OdljSJI4.mp3?rlkey=eponbyn82cyj6cf9qi9w9kl3z&st=60ugmbii&dl=1" type="audio/mpeg" />
+              </audio>
+            </span>
+          </div>
+        </div>
+      </div>
+      <script src="/_style/scripts/audioplayer.js" defer></script>
+
+      <script>
+        $("#mpbutttoon").on("click", function () {
+          $(".mphide").slideToggle("slow", function () {
+            // Animation complete.
+          });
+        });
+      </script>
+    </div>
+
+    <style>
+  .doghouse {
+    top: 0;
+    position: absolute;
+    z-index: 9999999999;
+    image-rendering: pixelated;
+    left: 60%; /* change position of dog */
+  }
+
+  @media only screen and (max-width: 861px) {
+    .doghouse {
+      display: none;
+    }
+  }
+  .dogleash {
+    width: 46px;
+    height: 25px;
+    transition: 0.5s;
+    background-image: url("/_images/site_images/dogbg.png");
+    background-position: bottom center;
+    background-size: 100%;
+  }
+
+  .dog {
+    width: 42px;
+    height: 30px;
+    user-select: none;
+  }
+  button.dog {
+    border: 0px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+</style>
+<div class="doghouse">
+  <div class="dogleash"></div>
+  <button class="dog" onclick="dogDrop()"><img src="/_images/site_images/utdog.gif" class="freezeframe" alt="annoying dog from undertale suspended by a rope." /></button>
+</div>
+<script>
+  function dogDrop() {
+    var myDiv = document.querySelector(".dogleash");
+    var currHeight = myDiv.clientHeight;
+    myDiv.style.height = currHeight + 100 + "px";
+  }
+
+  var audioUrl = "/_assets/bork.mp3";
+  $(".dog").click(() => new Audio(audioUrl).play());
+</script>
+
+    <!-- <script src="/_style/scripts/randomimage.js" defer></script> -->
+  </body>
+</html>
