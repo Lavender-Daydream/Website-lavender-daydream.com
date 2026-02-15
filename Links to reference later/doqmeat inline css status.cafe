@@ -1,0 +1,96 @@
+https://status.cafe/users/doqmeat 
+
+Ctrl + Shift + i
+Style Editor
+Inline Style Sheet
+
+	body {
+		background: url(https://doqmeat.com/!g/bg/starry.png);
+background-position:top center;
+background-attachment:fixed;
+background-size:cover;
+		font-family: ds, ms gothic, arial;
+		font-size: 18px;
+word-spacing:5px;
+color:#F0EFF4;
+text-shadow: 1px 1px 5px black, -1px -1px 5px black;
+	}
+
+a{
+color:#F0EFF4;}
+
+.profile-picture{
+margin: 0 100px;
+}
+
+	a:hover {
+		text-decoration: none
+	}
+
+	dt,
+	dd.homepage,
+	dd.email {
+		display: none;
+	}
+
+	dt {
+		width: auto;
+		padding: 3px;
+		font-size: inherit;
+		font-weight: normal;
+		background: transparent;
+	}
+
+	dd {
+		margin: 5px;
+font-size: 19px;
+  padding: 10px;
+background:transparent;
+	}
+
+	h2 {
+  text-align: center;
+	}
+
+	h2:before {
+		content: url(https://doqmeat.com/!g/pix/wing1.gif);
+		padding-right: 20px;
+	}
+
+	h2:after {
+		content: url(https://doqmeat.com/!g/pix/wing2.gif);
+		padding-left: 20px;
+	}
+
+	.cols {
+		padding: 5px;
+	}
+
+	header {
+display:inline-block;
+		text-align: center;
+		font-size: 18px;
+		padding: 5px;
+		background: transparent;
+		border: none;
+margin:auto;
+width:100%;
+	}
+
+	header a:before {
+		content: url(https://doqmeat.com/!g/pix/starpink.gif);
+		padding-right: 5px;
+		vertical-align: baseline;
+	}
+
+	.status-username {
+		padding: 3px;
+
+		background: transparent;
+	}
+
+	.status-username:before {
+		padding-right: 4px;
+		content: url(https://doqmeat.com/!g/pix/staryellow.gif);
+	}
+
